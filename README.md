@@ -1,14 +1,14 @@
-# Zotac-Queue-Alert
-Tracks zotacstore and will alert you when there is a queue
+# Ubiquiti product alert
+Tracks ubiquiti and will alert you when there is a restock
 
 **Description**
 
-This uses code from streetmerchant (https://github.com/jef/streetmerchant), and I modified it so that it will track zotac queues.
+This uses code from streetmerchant (https://github.com/jef/streetmerchant), and I modified it so that it will track ubiquiti products.
 
 **Instructions**
 
 1. Download Node.js
-2. Clone this project git clone https://github.com/Mr-Tech-13/Zotac-Queue-Alert.git
+2. Clone this project git clone https://github.com/Mr-Tech-13/Ubiquiti-scraper.git
 2a. To checkout a particular reference, use git checkout <ref name> after cloning.
 4. Navigate to this project by entering cd streetmerchant.
 5. Run npm install.
