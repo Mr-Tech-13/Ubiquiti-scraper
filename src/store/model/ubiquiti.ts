@@ -9,7 +9,7 @@ export const ubiquiti: Store = {
     },
     maxPrice: {
       container:
-        'comProduct__price add16right',
+        '#bundleApp > div.bundleLogic.add16bottom.add16top > div.one-whole.flex.flex-wrap > div > div.comProduct__price.add16right',
     },
   },
   links: [
@@ -17,7 +17,7 @@ export const ubiquiti: Store = {
       brand: 'test:brand',
       model: 'test:model',
       series: 'test:series',
-      url: 'https://api.bestbuy.com/click/-/6258941/pdp',
+      url: 'https://store.ui.com/collections/unifi-network-unifi-os-consoles/',
     },
     {
       brand: 'ubiquiti',
