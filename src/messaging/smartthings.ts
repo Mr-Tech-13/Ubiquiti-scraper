@@ -1,4 +1,4 @@
-import {SmartThings} from '@bridgerakol/samsung-smart-api';
+/**import {SmartThings} from '@bridgerakol/samsung-smart-api';
 import {logger} from '../logger';
 import {config} from '../config';
 
@@ -38,4 +38,4 @@ export async function activateSmartthingsSwitch() {
     );
     return;
   }
-}
+}*/

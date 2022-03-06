@@ -3,9 +3,13 @@ import Discord from 'discord.js';
 import {config} from '../config';
 import {logger} from '../logger';
 import {DMPayload} from '.';
+import {RawUserData} from 'discord.js/typings/rawDataTypes';
 
 const {notifyGroup, webhooks, notifyGroupSeries} = config.notifications.discord;
 const {pollInterval, responseTimeout, token, userId} = config.captchaHandler;
+const clientOptions: Discord.ClientOptions = {
+  intents: new Discord.Intents(),
+};
 
 function getIdAndToken(webhook: string) {
   const match = /.*\/webhooks\/(\d+)\/(.+)/.exec(webhook);
@@ -29,10 +33,10 @@ export function sendDiscordMessage(link: Link, store: Store) {
         const embed = new Discord.MessageEmbed()
           .setTitle('_**Stock alert!**_')
           .setDescription(
-            '>Ubiquiti is restocking'
+            'Ubiquiti is restocked :)'
           )
           .setThumbnail(
-            'https://th.bing.com/th/id/OIP.8M3FcEDENn0de7uiaJfy-AHaFG?w=257&h=180&c=7&o=5&pid=1.7'
+            ''
           )
           .setColor('#52b788')
           .setTimestamp();
@@ -65,14 +69,15 @@ export function sendDiscordMessage(link: Link, store: Store) {
         const promises = [];
         for (const webhook of webhooks) {
           const {id, token} = getIdAndToken(webhook);
-          const client = new Discord.WebhookClient(id, token);
+          const client = new Discord.WebhookClient({id, token}, clientOptions);
 
           promises.push(
             new Promise((resolve, reject) => {
               client
-                .send(notifyText.join(' '), {
+                .send({
+                  content: notifyText.length ? notifyText.join(' ') : null,
                   embeds: [embed],
-                  username: 'Ubiquiti Tracker',
+                  username: 'Ui bot',
                 })
                 .then(resp => {
                   logger.info('✔ discord message sent resp.id: ' + resp.id);
@@ -160,7 +165,7 @@ export async function getDMResponseAsync(
           after: botMessage?.id,
         });
         const lastUserMessage = messages
-          .filter(message => message.reference?.messageID === botMessage?.id)
+          .filter(message => message.reference?.messageId === botMessage?.id)
           .last();
         if (!lastUserMessage) {
           if (iteration >= iterations) {
@@ -197,7 +202,7 @@ export async function sendDMAndGetResponseAsync(
 async function getDiscordClientAsync() {
   let clientInstance = undefined;
   if (token) {
-    clientInstance = new Discord.Client();
+    clientInstance = new Discord.Client(clientOptions);
     await clientInstance.login(token);
   }
   return clientInstance;
@@ -208,7 +213,7 @@ async function getDMChannelAsync(client?: Discord.Client) {
   if (userId && client) {
     const user = await new Discord.User(client, {
       id: userId,
-    }).fetch();
+    } as RawUserData).fetch();
     dmChannelInstance = await user.createDM();
   }
   return dmChannelInstance;

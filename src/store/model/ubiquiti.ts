@@ -133,10 +133,10 @@ export const ubiquiti: Store = {
     },
     {
       brand: 'ubiquiti',
-      cartUrl: 'https://store.ui.com/collections/unifi-network-wireless/products/unifi-ac-lite',
+      cartUrl: 'https://store.ui.com/collections/unifi-network-wireless/products/unifi-ap-6-lite',
       model: 'ap lite',
       series: 'ap',
-      url: 'https://store.ui.com/collections/unifi-network-wireless/products/unifi-ac-lite',
+      url: 'https://store.ui.com/collections/unifi-network-wireless/products/unifi-ap-6-lite',
     },
     {
       brand: 'ubiquiti',
