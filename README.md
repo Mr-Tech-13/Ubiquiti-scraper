@@ -11,7 +11,7 @@ This uses code from streetmerchant (https://github.com/jef/streetmerchant), and 
 2. Clone this project git clone https://github.com/Mr-Tech-13/Ubiquiti-scraper.git
 2a. To checkout a particular reference, use git checkout <ref name> after cloning.
 4. Navigate to this project by entering cd streetmerchant.
-5. Run npm install.
+5. Run npm install and npm install node@16.6.1
 6. Make a copy of dotenv-example and name it dotenv.
 7. Edit the dotenv file to your liking using a text editor (like vscode).
 8.Run npm run start to start.
