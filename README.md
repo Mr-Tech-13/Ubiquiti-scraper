@@ -1,5 +1,10 @@
 # Ubiquiti product alert
+
 Tracks ubiquiti and will alert you when there is a restock
+
+**Project Status**
+
+*Active* I will add more features, such as new links/products
 
 **Description**
 
