@@ -206,11 +206,14 @@ export type Model =
   | 'xlr8 uprising'
   | 'xtreme'
   //START UI
+  //start console
   | 'udm pro'
   | 'udm'
   | 'udm pro special edition'
+  //start ap
   | 'wifi6 LR'
   | 'wifi6 lite'
+  |'wifi6 pro'
   | 'BaseStation XG'
   | 'ap HD'
   | 'ap FLEX HD'
@@ -227,6 +230,7 @@ export type Model =
   | 'ap mesh'
   | 'ap inwall'
   | 'ap lite'
+  //switch
   | 'pro 24 POE'
   | 'pro 24'
   | '24 POE'
@@ -248,7 +252,14 @@ export type Model =
   | 'POE+ 48(500w)'
   | 'POE 8(150w)'
   | 'POE 16(150w)'
+  //start camera
   | 'G4 PRO'
+  |'g4 ptz'
+  |'g4 instant'
+  |'ai 360'
+  |'g3 pro'
+  |'doorbell g4'
+  |'g4 bullet'
   | 'G3 Bullet'
   | 'G3 Flex'
   | 'G4 Dome'

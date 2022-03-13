@@ -156,10 +156,10 @@ export const ubiquiti: Store = {
     },
     {
       brand: 'ubiquiti',
-      cartUrl: 'https://store.ui.com/collections/unifi-network-wireless/products/unifi-6-long-range-access-point',
+      cartUrl: 'https://store.ui.com/collections/unifi-network-wireless/products/unifi-ap-6-lite',
       model: 'wifi6 LR',
       series: 'ap',
-      url: 'https://store.ui.com/collections/unifi-network-wireless/products/unifi-6-long-range-access-point',
+      url: 'https://store.ui.com/collections/unifi-network-wireless/products/unifi-ap-6-lite',
     },
     {
       brand: 'ubiquiti',
@@ -167,6 +167,13 @@ export const ubiquiti: Store = {
       model: 'wifi6 lite',
       series: 'ap',
       url: 'https://store.ui.com/collections/unifi-network-wireless/products/unifi-ap-6-lite',
+    },
+    {
+      brand:'ubiquiti',
+      cartUrl:'https://store.ui.com/collections/unifi-network-wireless/products/unifi-ap6-professional',
+      model:'wifi6 pro',
+      series:'ap',
+      url:'https://store.ui.com/collections/unifi-network-wireless/products/unifi-ap6-professional',
     },
     {
       brand: 'ubiquiti',
@@ -351,6 +358,40 @@ export const ubiquiti: Store = {
       url: 'https://store.ui.com/collections/unifi-protect/products/unifi-protect-g4-pro-camera',
     },
     {
+      brand:'ubiquiti',
+      cartUrl:'https://store.ui.com/collections/unifi-protect/products/unifi-protect-g4-ptz',
+      model:'g4 ptz',
+      series:'camera',
+      url:'https://store.ui.com/collections/unifi-protect/products/unifi-protect-g4-ptz',
+    },
+    {
+      brand:'ubiquiti',
+      cartUrl:'https://store.ui.com/collections/unifi-protect/products/camera-g4-instant',
+      model:'g4 instant',
+      series:'camera',
+      url:'https://store.ui.com/collections/unifi-protect/products/camera-g4-instant',
+    },    {
+      brand:'ubiquiti',
+      cartUrl:'https://store.ui.com/collections/unifi-protect/products/unifi-protect-ai-360',
+      model:'ai 360',
+      series:'camera',
+      url:'https://store.ui.com/collections/unifi-protect/products/unifi-protect-ai-360',
+    },
+    {
+      brand:'ubiquiti',
+      cartUrl:'https://store.ui.com/collections/unifi-protect/products/unifi-video-g3-pro-camera-1',
+      model:'g3 pro',
+      series:'camera',
+      url:'https://store.ui.com/collections/unifi-protect/products/unifi-video-g3-pro-camera-1',
+    },
+    {
+      brand:'ubiquiti',
+      cartUrl:'https://store.ui.com/collections/unifi-protect/products/uvc-g4-doorbell',
+      model:'doorbell g4',
+      series:'camera',
+      url:'https://store.ui.com/collections/unifi-protect/products/uvc-g4-doorbell',
+    },
+    {
       brand: 'ubiquiti',
       cartUrl: 'https://store.ui.com/collections/unifi-protect/products/unifi-video-camera-g3-bullet',
       model: 'G3 Bullet',
@@ -377,6 +418,13 @@ export const ubiquiti: Store = {
       model: 'G3 Instant',
       series: 'camera',
       url: 'https://store.ui.com/collections/unifi-protect/products/unifi-protect-g3-instant-camera',
+    },
+    {
+      brand:'ubiquiti',
+      cartUrl:'https://store.ui.com/collections/unifi-protect/products/unifi-protect-g4-bullet-camera',
+      model:'g4 bullet',
+      series:'camera',
+      url:'https://store.ui.com/collections/unifi-protect/products/unifi-protect-g4-bullet-camera',
     },
     {
       brand: 'ubiquiti',
