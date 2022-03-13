@@ -267,6 +267,8 @@ export type Model =
   | 'video recorder pro'
   | 'Gen2'
   | 'gen2+'
+  |'nvr'
+  |'nvr pro'
   | 'qick';
 
 export type Link = {

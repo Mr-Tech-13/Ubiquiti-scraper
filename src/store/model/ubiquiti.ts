@@ -447,6 +447,20 @@ export const ubiquiti: Store = {
       series:'Cloud Key',
       url:'https://store.ui.com/collections/unifi-network-unifi-os-consoles/products/unifi-cloudkey-plus',
     },
+    {
+      brand:'ubiquiti',
+      cartUrl:'https://store.ui.com/collections/unifi-protect-nvr/products/unifi-protect-network-video-recorder-pro',
+      model:'nvr pro',
+      series:'accessory',
+      url:'https://store.ui.com/collections/unifi-protect-nvr/products/unifi-protect-network-video-recorder-pro',
+    },
+    {
+      brand:'ubiquiti',
+      cartUrl:'https://store.ui.com/collections/unifi-protect-nvr/products/unifi-protect-nvr',
+      model:'nvr',
+      series:'accessory',
+      url:'https://store.ui.com/collections/unifi-protect-nvr/products/unifi-protect-nvr',
+    },
   ],
   name: 'ubiquiti',
 };
