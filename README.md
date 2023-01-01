@@ -4,7 +4,9 @@ Tracks ubiquiti and will alert you when there is a restock
 
 **Project Status**
 
-*Active* I will add more features, such as new links/products
+*MAINTNENCE*
+
+No new releases for a long period of time, due to the code being almost perfect
 
 **Description**
 
